@@ -15,7 +15,7 @@ html {
 }
 
 .button {
-  border-radius: 0.25rem;
+  border-radius: 4px;
   background-color: #4a4a4a;
   color: white;
 }
@@ -26,7 +26,6 @@ html {
 
 .image-container img {
   display: block;
-  max-width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -42,36 +41,24 @@ header {
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
-  height: 5.3rem;
-  display: flex;
-  z-index: 5;
 }
 
 header .content {
   display: flex;
   align-items: center;
   padding: 1.875rem;
-  width: 100%;
 }
 
 header .logo {
   flex: 1;
-  color: #4a4a4a;
-  font-size: 1.5rem;
-  font-family: Roboto-Mono-Regular;
-  text-decoration: none;
 }
 
 header nav ul {
   display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  padding: 0;
 }
 
 nav li {
-  padding: 0 1.875rem;
-  display: inline-flex;
+  padding-left: 3.5rem;
 }
 
 nav a {
@@ -79,7 +66,6 @@ nav a {
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
-  text-decoration: none;
 }
 
 header .icon {
@@ -131,8 +117,6 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
-  background-image: url("../images/banner-landingpage.jpg");
-  background-size: cover;
 }
 
 #sign-up-cta {
@@ -140,8 +124,6 @@ header .mobile {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
-  margin-top: 10.625rem;
-  margin-left: 6.25rem;
 }
 
 #sign-up-cta .content {
@@ -231,11 +213,10 @@ header .mobile {
   display: flex;
   justify-content: space-between;
   padding: 4rem 5%;
-  background-color: #f3f3f3;  
+  background-color: #f3f3f3;
 }
 
 .feature {
-  flex-shrink: 1;
   flex: 1;
   padding: 2rem;
   margin: 0px 1.25rem;
@@ -313,7 +294,6 @@ header .mobile {
 }
 
 #filters-section .images-container {
-  display: inline-flex;
   max-width: 100%;
   padding: 0 1%;
 }
@@ -352,10 +332,13 @@ header .mobile {
 
 #quotes-section {
   background-color: #f3f3f3;
+}
+
+#quotes-section content {
   padding: 5rem 0;
 }
 
-#quotes-section .quote {
+#quotes-section quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
